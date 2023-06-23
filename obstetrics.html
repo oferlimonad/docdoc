@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style>
+        /* General styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f1026;
+            color: #f2f2f2;
+            line-height: 1.4;
+        }
+
+        .light-grey {
+            color: #4973f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Header styles */
+        header {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1b2040;
+            color: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f2f2f2;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4973f2;
+        }
+
+        /* Form and Columns styles */
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .left-column,
+        .right-column {
+            width: calc(50% - 50px);
+            padding: 0 10px;
+        }
+
+        .left-column {
+            overflow-y: auto;
+            max-height: 550px;
+        }
+
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            vertical-align: top;
+        }
+
+        .field-container {
+            margin-bottom: 10px;
+        }
+
+
+        /* Generated Template styles */
+        h2 {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .button-container > a {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 18px;
+            background-color: #4e7aff;
+            color: #f2f2f2;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            flex-basis: 20%;
+        }
+
+        .button-container > a:hover {
+            background-color: #f2911b;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1b2040;
+            color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-text {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-column {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-column:not(:last-child) {
+            margin-right: 50px;
+        }
+
+        .timer-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .timer {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-right: 40px;
+        }
+
+        .timer-buttons {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="obstetrics.html">מיילדות</a></li>
+                <li><a href="gynecology.html">גינקולוגיה</a></li>
+                <li><a href="fertility.html">פריון</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <span class="light-grey">DOC</span>DOC
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-page">
+            <br>
+            <br>
+            <h1>שלום לך ד״ר לימונד</h1>
+            <br>
+            <h2>בחר/י אחת מהאפשרויות הבאות:</h2>
+            <br>
+            <div class="button-container">
+                <a href="https://etty-spiegel.com">עקומות גדילה - שפיגל יגל</a>
+                <a href="firstvisit.html">ביקור ראשון בהריון</a>
+                <a href="#">ביקור חוזר בהריון</a>
+                <a href="#">הפחתה בתנועות עובר</a>
+                <a href="#">ביקורת</a>
+                <a href="#">קישור 6</a>
+                <a href="#">קישור 7</a>
+                <a href="#">קישור 8</a>
+                <a href="#">קישור 9</a>
+                <a href="#">קישור 10</a>
+                <a href="#">קישור 11</a>
+                <a href="#">קישור 12</a>
+                <a href="#">קישור 13</a>
+                <a href="#">קישור 14</a>
+                <a href="#">קישור 15</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">&copy; 2023 ד״ר עופר לימונד. כל הזכויות שמורות.</p>
+    </footer>
+</body>
+
+</html>
