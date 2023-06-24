@@ -1,0 +1,190 @@
+ /* General styles */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ body {
+     font-family: Helvetica, sans-serif;
+     background-color: #0f1026;
+     color: #f2f2f2;
+     line-height: 1.4;
+ }
+
+ .light-grey {
+     color: #4973f2;
+ }
+
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+     margin-top: 40px;
+ }
+
+ /* Header styles */
+ header {
+     width: 100%;
+     padding: 10px 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #1b2040;
+     color: #f2f2f2;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .logo {
+     font-size: 24px;
+     font-weight: bold;
+     letter-spacing: 2px;
+ }
+
+ /* Navigation styles */
+ nav {
+     display: flex;
+     align-items: center;
+ }
+
+ nav ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+ }
+
+ nav ul li {
+     margin-left: 10px;
+ }
+
+ nav ul li a {
+     text-decoration: none;
+     color: #f2f2f2;
+     padding: 5px 10px;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+ }
+
+ nav ul li a:hover {
+     background-color: #4973f2;
+ }
+
+ /* Form and Columns styles */
+ .form-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin-bottom: 20px;
+ }
+
+ .left-column,
+ .right-column {
+     width: calc(50% - 50px);
+     padding: 0 10px;
+ }
+
+ .left-column {
+     overflow-y: auto;
+     max-height: 550px;
+     scrollbar-width: none;
+     /* Firefox */
+     -ms-overflow-style: none;
+     /* Internet Explorer 10+ */
+ }
+
+ .left-column::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge, and Opera */
+}
+
+
+ label {
+     display: inline-block;
+     margin-bottom: 5px;
+     vertical-align: top;
+ }
+
+ .field-container {
+     margin-bottom: 10px;
+ }
+
+
+ /* Generated Template styles */
+ h2 {
+     margin-top: 20px;
+     font-size: 18px;
+ }
+
+ textarea {
+     width: 100%;
+     padding: 10px;
+     resize: vertical;
+     background-color: #1b2040;
+     color: #ffffff;
+     border: 1px solid #4973f2;
+     border-radius: 4px;
+     font-size: 15px;
+ }
+
+ .button-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ .button-container>a {
+     display: inline-block;
+     padding: 8px 16px;
+     font-size: 16px;
+     background-color: #4e7aff;
+     color: #f2f2f2;
+     border: none;
+     border-radius: 6px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     text-decoration: none;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     flex-basis: 20%;
+ }
+
+ .button-container>a:hover {
+     background-color: #f2911b;
+ }
+
+ /* Footer styles */
+ footer {
+     background-color: #1b2040;
+     color: #f2f2f2;
+     padding: 20px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .footer-text {
+     font-size: 14px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* Add this line to center the text horizontally */
+     flex: 1;
+     /* Add this line to make the text occupy remaining space */
+ }
+
+ .footer-column {
+     display: flex;
+     align-items: center;
+ }
+
+ .footer-column:not(:last-child) {
+     margin-right: 50px;
+ }
